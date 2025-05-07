@@ -35,7 +35,7 @@ palabra = input("Ingrese una palabra (sin espacios): ")
 if " " in palabra:
     print("Error: La palabra no debe contener espacios.")
 else:
-    # Inicializar contadores por cada vocal (mayúscula y minúscula)
+    # Iniciar contador por cada vocal (mayúscula y minúscula)
     a = A = e = E = i = I = o = O = u = U = 0
 
     # Recorrer la palabra letra por letra
