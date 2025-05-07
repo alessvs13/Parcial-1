@@ -72,7 +72,6 @@ else:
     print("o:", o)
     print("O:", O)
     print("u:", u)
-    print
 
 
 
