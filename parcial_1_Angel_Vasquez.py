@@ -50,7 +50,7 @@ else:
             conteo_vocales[letra] += 1
 
     # Mostrar los resultados
-    print("\nLa palabra tiene:")
+    print("La palabra tiene:")
     for vocal in ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']:
         print(f"{vocal}: {conteo_vocales[vocal]}")
 
