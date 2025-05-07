@@ -29,51 +29,30 @@ except ValueError:
 
 # TERCER EJERCICIO
 # Solicitar una palabra sin espacios
-palabra = input("Ingrese una palabra (sin espacios): ")
+palabra = input("Ingrese una palabra (sin espacios): ")5
 
 # Verificar que la palabra no tenga espacios
 if " " in palabra:
     print("Error: La palabra no debe contener espacios.")
 else:
-    # Iniciar contador por cada vocal (mayúscula y minúscula)
-    a = A = e = E = i = I = o = O = u = U = 0
+    # Crear un diccionario para contar vocales
+    conteo_vocales = {
+        'a': 0, 'A': 0,
+        'e': 0, 'E': 0,
+        'i': 0, 'I': 0,
+        'o': 0, 'O': 0,
+        'u': 0, 'U': 0
+    }
 
     # Recorrer la palabra letra por letra
     for letra in palabra:
-        if letra == 'a':
-            a += 1
-        elif letra == 'A':
-            A += 1
-        elif letra == 'e':
-            e += 1
-        elif letra == 'E':
-            E += 1
-        elif letra == 'i':
-            i += 1
-        elif letra == 'I':
-            I += 1
-        elif letra == 'o':
-            o += 1
-        elif letra == 'O':
-            O += 1
-        elif letra == 'u':
-            u += 1
-        elif letra == 'U':
-            U += 1
+        if letra in conteo_vocales:
+            conteo_vocales[letra] += 1
 
     # Mostrar los resultados
     print("\nLa palabra tiene:")
-    print("a:", a)
-    print("A:", A)
-    print("e:", e)
-    print("E:", E)
-    print("i:", i)
-    print("I:", I)
-    print("o:", o)
-    print("O:", O)
-    print("u:", u)
-
-
+    for vocal in ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']:
+        print(f"{vocal}: {conteo_vocales[vocal]}")
 
 
 
